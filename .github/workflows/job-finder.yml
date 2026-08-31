@@ -1,0 +1,48 @@
+name: Job Finder
+
+on:
+  schedule:
+    # 03:00 UTC = 08:30 AM IST daily. Edit the cron string to change the time.
+    - cron: "0 3 * * *"
+  workflow_dispatch: {} # adds a manual "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write # needed so the workflow can commit updated data/dashboard back to the repo
+
+jobs:
+  find-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run scraper, scorer, and email digest
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          SEARCH_LOCATION: ${{ secrets.SEARCH_LOCATION }}
+          SEARCH_TITLES: ${{ secrets.SEARCH_TITLES }}
+          MIN_SCORE: ${{ secrets.MIN_SCORE }}
+        run: npm run run-once
+
+      - name: Regenerate static dashboard
+        run: npm run generate-dashboard
+
+      - name: Commit updated data and dashboard
+        run: |
+          git config user.name "job-finder-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/jobs.json docs/index.html
+          git diff --quiet --cached || git commit -m "Update job listings [automated]"
+          git push
