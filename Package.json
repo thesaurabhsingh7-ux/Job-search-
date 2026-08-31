@@ -1,0 +1,17 @@
+{
+  "name": "job-finder",
+  "version": "1.0.0",
+  "description": "Automated job discovery + relevance scoring + email digest for influencer marketing / D2C marketing roles in Mumbai",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "run-once": "node src/index.js",
+    "generate-dashboard": "node scripts/generateDashboard.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.16"
+  }
+}
