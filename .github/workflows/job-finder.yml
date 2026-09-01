@@ -2,12 +2,11 @@ name: Job Finder
 
 on:
   schedule:
-    # 03:00 UTC = 08:30 AM IST daily. Edit the cron string to change the time.
     - cron: "0 3 * * *"
-  workflow_dispatch: {} # adds a manual "Run workflow" button in the Actions tab
+  workflow_dispatch: {}
 
 permissions:
-  contents: write # needed so the workflow can commit updated data/dashboard back to the repo
+  contents: write
 
 jobs:
   find-jobs:
@@ -26,10 +25,7 @@ jobs:
 
       - name: Run scraper, scorer, and email digest
         env:
-          SMTP_HOST: ${{ secrets.SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_TO: ${{ secrets.DIGEST_TO }}
           SEARCH_LOCATION: ${{ secrets.SEARCH_LOCATION }}
           SEARCH_TITLES: ${{ secrets.SEARCH_TITLES }}
