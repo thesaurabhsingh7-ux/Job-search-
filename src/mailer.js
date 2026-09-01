@@ -1,16 +1,4 @@
-const nodemailer = require("nodemailer");
-
-function buildTransport() {
-  return nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: Number(process.env.SMTP_PORT || 465),
-    secure: Number(process.env.SMTP_PORT || 465) === 465,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
-}
+const axios = require("axios");
 
 function jobRowHtml(job) {
   return `
@@ -29,7 +17,12 @@ async function sendDigest(jobs) {
     return;
   }
 
-  const transport = buildTransport();
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("[mailer] RESEND_API_KEY is not set — skipping email send.");
+    return;
+  }
+
   const sorted = [...jobs].sort((a, b) => b.score - a.score);
 
   const html = `
@@ -41,14 +34,27 @@ async function sendDigest(jobs) {
       <p style="color:#999;font-size:12px;margin-top:20px;">Sent by your job-finder script.</p>
     </div>`;
 
-  await transport.sendMail({
-    from: process.env.SMTP_USER,
-    to: process.env.DIGEST_TO || process.env.SMTP_USER,
-    subject: `${jobs.length} new job match${jobs.length > 1 ? "es" : ""} — ${new Date().toLocaleDateString("en-IN")}`,
-    html,
-  });
-
-  console.log(`[mailer] Sent digest with ${jobs.length} jobs.`);
+  try {
+    await axios.post(
+      "https://api.resend.com/emails",
+      {
+        from: "Job Finder <onboarding@resend.dev>",
+        to: [process.env.DIGEST_TO],
+        subject: `${jobs.length} new job match${jobs.length > 1 ? "es" : ""} — ${new Date().toLocaleDateString("en-IN")}`,
+        html,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log(`[mailer] Sent digest with ${jobs.length} jobs via Resend.`);
+  } catch (err) {
+    console.error("[mailer] Resend API error:", err.response?.data || err.message);
+    throw err;
+  }
 }
 
 module.exports = { sendDigest };
