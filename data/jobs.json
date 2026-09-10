@@ -1372,5 +1372,62 @@
       "Location matches"
     ],
     "firstSeen": "2026-09-09T08:01:09.588Z"
+  },
+  {
+    "title": "Influencer Marketing Executive",
+    "company": "Alphabet Media",
+    "location": "Mumbai, Maharashtra, India",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/influencer-marketing-executive-at-alphabet-media-4463436451",
+    "source": "LinkedIn",
+    "score": 58,
+    "reasons": [
+      "Title matches \"influencer marketing executive\"",
+      "2 core skill match(es)",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-10T08:00:31.316Z"
+  },
+  {
+    "title": "Senior Performance Marketing Executive",
+    "company": "Nabhya Ayurveda",
+    "location": "Mumbai",
+    "description": "",
+    "url": "https://internshala.com/job/detail/senior-performance-marketing-executive-job-in-mumbai-at-nabhya-ayurveda1788955785",
+    "source": "Internshala",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-10T08:00:31.316Z"
+  },
+  {
+    "title": "Ecommerce Marketing Executive",
+    "company": "The Pant Project",
+    "location": "Mumbai, Maharashtra, India",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/ecommerce-marketing-executive-at-the-pant-project-4463864344",
+    "source": "LinkedIn",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-10T08:00:31.317Z"
+  },
+  {
+    "title": "Performance Marketing Executive",
+    "company": "Stay Ukiyo",
+    "location": "Mumbai Metropolitan Region",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/performance-marketing-executive-at-stay-ukiyo-4437688705",
+    "source": "LinkedIn",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-10T08:00:31.317Z"
   }
 ]
