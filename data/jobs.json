@@ -1429,5 +1429,65 @@
       "Location matches"
     ],
     "firstSeen": "2026-09-10T08:00:31.317Z"
+  },
+  {
+    "title": "Influencer Marketing Manager",
+    "company": "Me N Moms Pvt. Ltd.",
+    "location": "Mumbai, Maharashtra, India",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/influencer-marketing-manager-at-me-n-moms-pvt-ltd-4462219319",
+    "source": "LinkedIn",
+    "score": 58,
+    "reasons": [
+      "Title matches \"influencer marketing manager\"",
+      "2 core skill match(es)",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-11T07:57:17.743Z"
+  },
+  {
+    "title": "Influencer Marketing Manager",
+    "company": "Kinnect",
+    "location": "Mumbai, Maharashtra, India",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/influencer-marketing-manager-at-kinnect-4465618929",
+    "source": "LinkedIn",
+    "score": 58,
+    "reasons": [
+      "Title matches \"influencer marketing manager\"",
+      "2 core skill match(es)",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-11T07:57:17.743Z"
+  },
+  {
+    "title": "Influencer Marketing Executive",
+    "company": "Capes India",
+    "location": "Mumbai",
+    "description": "",
+    "url": "https://internshala.com/job/detail/influencer-marketing-executive-job-in-mumbai-at-capes-india1789111796",
+    "source": "Internshala",
+    "score": 58,
+    "reasons": [
+      "Title matches \"influencer marketing executive\"",
+      "2 core skill match(es)",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-11T07:57:17.743Z"
+  },
+  {
+    "title": "Social Media Marketing Executive",
+    "company": "Dscovr Journeys Private Limited",
+    "location": "Mumbai",
+    "description": "",
+    "url": "https://internshala.com/job/detail/social-media-marketing-executive-job-in-mumbai-at-dscovr-journeys-private-limited1789109925",
+    "source": "Internshala",
+    "score": 54,
+    "reasons": [
+      "Title matches \"social media marketing executive\"",
+      "1 core skill match(es)",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-11T07:57:17.743Z"
   }
 ]
