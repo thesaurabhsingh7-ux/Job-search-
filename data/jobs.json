@@ -1588,5 +1588,47 @@
       "Location matches"
     ],
     "firstSeen": "2026-09-13T08:09:52.611Z"
+  },
+  {
+    "title": "Marketing Executive /Sr. Marketing Executive",
+    "company": "Parsi Dairy Farm Private Limited",
+    "location": "Mumbai, Maharashtra, India",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/marketing-executive-sr-marketing-executive-at-parsi-dairy-farm-private-limited-4464768559",
+    "source": "LinkedIn",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-14T08:44:27.829Z"
+  },
+  {
+    "title": "Marketing Executive",
+    "company": "EduFund",
+    "location": "Mumbai Metropolitan Region",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/marketing-executive-at-edufund-4465728447",
+    "source": "LinkedIn",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-14T08:44:27.829Z"
+  },
+  {
+    "title": "Digital Marketing Executive - Political Campaign",
+    "company": "AsmitA India Realty",
+    "location": "Mumbai, Maharashtra, India",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/digital-marketing-executive-political-campaign-at-asmita-india-realty-4463818333",
+    "source": "LinkedIn",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-14T08:44:27.829Z"
   }
 ]
