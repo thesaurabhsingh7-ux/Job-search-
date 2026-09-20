@@ -1901,5 +1901,34 @@
       "Location matches"
     ],
     "firstSeen": "2026-09-19T07:56:49.130Z"
+  },
+  {
+    "title": "Digital Marketing Executive in Mumbai",
+    "company": "Scalar Tech Media",
+    "location": "Mumbai Metropolitan Region",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/digital-marketing-executive-in-mumbai-at-scalar-tech-media-4469561578",
+    "source": "LinkedIn",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-20T08:27:17.055Z"
+  },
+  {
+    "title": "Junior Social Media Marketing Executive",
+    "company": "MARKETING MOVES MEDIA PRIVATE LIMITED",
+    "location": "Mumbai",
+    "description": "",
+    "url": "https://internshala.com/job/detail/fresher-junior-social-media-marketing-executive-job-in-mumbai-at-marketing-moves-media-private-limited1789104006",
+    "source": "Internshala",
+    "score": 54,
+    "reasons": [
+      "Title matches \"social media marketing executive\"",
+      "1 core skill match(es)",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-20T08:27:17.056Z"
   }
 ]
