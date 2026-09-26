@@ -2229,5 +2229,34 @@
       "Location matches"
     ],
     "firstSeen": "2026-09-25T08:41:19.306Z"
+  },
+  {
+    "title": "Influencer Marketing Executive",
+    "company": "MG",
+    "location": "Mumbai Metropolitan Region",
+    "description": "",
+    "url": "https://in.linkedin.com/jobs/view/influencer-marketing-executive-at-mg-4470388892",
+    "source": "LinkedIn",
+    "score": 58,
+    "reasons": [
+      "Title matches \"influencer marketing executive\"",
+      "2 core skill match(es)",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-26T08:27:43.155Z"
+  },
+  {
+    "title": "Marketing Executive",
+    "company": "BVC Logistics",
+    "location": "Mumbai",
+    "description": "",
+    "url": "https://internshala.com/job/details/marketing-executive-job-in-mumbai-at-bvc-logistics1790330105",
+    "source": "Internshala",
+    "score": 50,
+    "reasons": [
+      "Title matches \"marketing executive\"",
+      "Location matches"
+    ],
+    "firstSeen": "2026-09-26T08:27:43.155Z"
   }
 ]
